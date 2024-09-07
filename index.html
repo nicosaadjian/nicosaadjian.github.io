@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            background-color: transparent !important; /* Fondo transparente */
+        }
+    </style>
     <title>Nicolas Saadjian</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
-            <button class="btn btn-primary custom-hover"><a href="#profile">Profile</a></button>
-            <button class="btn btn-primary custom-hover"><a href="#skills">Skills</a></button>
-            <button class="btn btn-primary custom-hover"><a href="#work-experience">Work Experience</a></button>
-            <button class="btn btn-primary custom-hover"><a href="#education">Education</a></button>
-            <button class="btn btn-primary custom-hover"><a href="#interests">Interests</a></button>
-            <button class="btn btn-primary custom-hover"><a href="#contact">Contact</a></button>
-    </nav>
     <header>
-        <h1 id="start">
-            Nicolás Saadjian
-        </h1>
+        <nav class="navbar navbar-expand-sm bg-light">
+                <button class="btn btn-primary custom-hover"><a href="#profile">Profile</a></button>
+                <button class="btn btn-primary custom-hover"><a href="#skills">Skills</a></button>
+                <button class="btn btn-primary custom-hover"><a href="#work-experience">Work Experience</a></button>
+                <button class="btn btn-primary custom-hover"><a href="#education">Education</a></button>
+                <button class="btn btn-primary custom-hover"><a href="#interests">Interests</a></button>
+                <button class="btn btn-primary custom-hover"><a href="#contact">Contact</a></button>
+        </nav>
+
     </header>
     <main>
+        <h1 id="start">
+            Nicolás Saadjian
+        </h1>        
         <div class="submain">
             <section id="profile">
                 <p>I am a self taught Software Developer with a <strong>strong</strong>
@@ -33,12 +39,13 @@
             <section id="skills">
             <h3>Skills</h3>
                 <ul>
-                    <li class="skill">Python</li>
+                    <a href="https://github.com/nicosaadjian/pokedex"><li class="skill">Python</li></a>
                     <li class="skill">Django</li>
                     <li class="skill">SQL</li>
-                    <li class="skill">HTML</li>
-                    <li class="skill">CSS</li>
-                    <li class="skill">Bootstrap 5</li>
+                    <li class="skill" id="skill-html">HTML</li>
+                    <li class="skill" id="skill-css">CSS</li>
+                    <li class="skill" id="skill-bootstrap">Bootstrap 5</li>
+                    <li class="skill">Javascript</li>
                     <li class="skill">Github</li>
                     <li class="skill">SAP HANA</li>
                 </ul>
@@ -47,7 +54,7 @@
             <h3>Work Experience</h3>
                 <article>
                     <h4>Data Engineer</h4>
-                    <h4>Seidor Analytics | 2022-present</h4>
+                    <h4><a href="https://www.linkedin.com/company/seidor-analytics/" class="company">Seidor Analytics</a> | 2022-present</h4>
                     <h5>Summmary</h5>
                     <ul>
                         <li>Views and Report creation and mantainance</li>
@@ -64,7 +71,7 @@
                 </article>
                 <article>
                     <h4>Manual QA</h4>
-                    <h4>Macroseguridad Argentina | 2021 - 2022</h4>
+                    <h4><a href="https://www.linkedin.com/company/macroseguridad-org/" class="company">Macroseguridad Argentina</a> | 2021 - 2022</h4>
                     <h5>Summmary</h5>
                     <ul>
                         <li>Testing and Virtualization in macOS, Linux & Windows
@@ -82,6 +89,7 @@
                         login persistence, digital signature functionality cross platform).
                         I also got hands on automation by creating bash and powershell scripts for tokens' driver
                         installation and uninstall.
+                        Maybe you can recognize the Linux's background-canvas inspiration.
                     </p>
                 </article>
             </section>
@@ -115,11 +123,12 @@
                 </ul>
             </section>
         </div>
+        <script src="index.js"></script>
     </main>
     <footer>
         <button class="btn btn-primary"><a href="#">Bored? Click me!</a></button>
-        <iframe src="wally.html" width="512px" height="368px" style="border:none;"></iframe>
-        <button class="btn btn-primary"><a href="#start">Go up</a></button>
+        <br><br><iframe src="wally.html" width="512px" height="368px" style="border:none;"></iframe>
+        <br><br><button class="btn btn-primary"><a href="#start">Go up</a></button>
     </footer>
 </body>
 </html>
