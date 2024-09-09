@@ -15,13 +15,35 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm bg-light">
-                <button class="btn btn-primary custom-hover"><a href="#profile">Profile</a></button>
-                <button class="btn btn-primary custom-hover"><a href="#skills">Skills</a></button>
-                <button class="btn btn-primary custom-hover"><a href="#work-experience">Work Experience</a></button>
-                <button class="btn btn-primary custom-hover"><a href="#education">Education</a></button>
-                <button class="btn btn-primary custom-hover"><a href="#interests">Interests</a></button>
-                <button class="btn btn-primary custom-hover"><a href="#contact">Contact</a></button>
-        </nav>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#profile" class="btn btn-primary custom-hover nav-link" id="a-nav-item">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skills" class="btn btn-primary custom-hover nav-link" id="a-nav-item">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#work-experience" class="btn btn-primary custom-hover nav-link" id="a-nav-item">Work Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#education" class="btn btn-primary custom-hover nav-link" id="a-nav-item">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#interests" class="btn btn-primary custom-hover nav-link" id="a-nav-item">Interests</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="btn btn-primary custom-hover nav-link" id="a-nav-item">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
     <main>
@@ -39,7 +61,7 @@
             <section id="skills">
             <h3>Skills</h3>
                 <ul>
-                    <a href="https://github.com/nicosaadjian/pokedex"><li class="skill">Python</li></a>
+                    <li class="skill"><a href="https://github.com/nicosaadjian/pokedex">Python</a></li>
                     <li class="skill">Django</li>
                     <li class="skill">SQL</li>
                     <li class="skill" id="skill-html">HTML</li>
@@ -126,9 +148,25 @@
         <script src="index.js"></script>
     </main>
     <footer>
-        <button class="btn btn-primary"><a href="#">Bored? Click me!</a></button>
-        <br><br><iframe src="wally.html" width="512px" height="368px" style="border:none;"></iframe>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wallyModal">Bored? Click me!</button>
         <br><br><button class="btn btn-primary"><a href="#start">Go up</a></button>
     </footer>
+    <div class="modal fade" id="wallyModal" tabindex="-1" aria-labelledby="wallyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wallyModalLabel">Remember this classic? Try finding Wally</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí se muestra el minijuego de Wally -->
+                    <iframe src="wally.html" width="100%" height="500px" style="border:none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
