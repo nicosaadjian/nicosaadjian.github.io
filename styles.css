@@ -1,4 +1,6 @@
-
+html{
+    scroll-padding-top: var(--scroll-padding, 0px);
+}
 
 li{ /*list-style-type: none;*/
     padding-left: 20px;
@@ -10,35 +12,68 @@ h1{
     background-color: #ad1b51;
     color:white;
 }
-a{color: white;
+
+#a-nav-item{
+    color: white;
+}
+
+a{color: black;
 text-decoration: none;}
+
+
+
+.company{
+    color:black;
+}
+.company:hover{
+    font-weight: bold;
+}
 
 main{
     background-image: url('bg.png');
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que se repita en mosaico */
-    background-position: center; /* Centra la imagen en la pantalla */
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50px;
 }
 
+header{
+    background-color: transparent;
+}
 .navbar{
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.btn.btn-primary{
+    background-color: #77216f;
+    margin-left: 10px;
+}
+.btn.btn-primary:hover{
+    background-color: #ad1b51;
+}
 
 .skill{
-    display: inline-block; 
+    display: inline-block;
+    padding-right: 20px; 
+    font-weight: bold;
 }
+
+.skill a:hover{
+    color: #08551e;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
 .skill:hover{
     color: #08551e;
     cursor: pointer;
     font-weight: bold;
 }
 .submain {
-    padding: 20px; /* Ajusta el valor según el espaciado que desees */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
+    padding: 20px;
+    box-sizing: border-box;
 }
 #contact ul li{
     list-style-type: none;
@@ -49,4 +84,14 @@ main{
     font-weight: bold;
     background-color: rgb(185, 107, 10);
 
+}
+
+#work-experience{
+    width: 50%;
+    text-align: justify;
+}
+
+#education{
+    width: 50%;
+    text-align: justify;
 }
