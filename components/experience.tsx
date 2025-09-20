@@ -20,7 +20,7 @@ export function Experience() {
     {
       title: "Data Engineer",
       company: "Seidor Analytics",
-      period: "2022-present",
+      period: "2022-2025",
       summary: [
         "Python for Data Analysis",
         "SQL for Modelling and Performance",
