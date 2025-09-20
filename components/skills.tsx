@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export function Skills() {
-  const skills = ["Javascript", "React", "Python", "Django", "SQL", "HTML", "CSS", "Bootstrap 5", "Github"]
+  const skills = ["Node.js", "ReactJS", "AWS EC2/RDS", "Python", "Django", "SQL", "Jest", "GitHub", "Netlify"]
 
   return (
     <section id="skills" className="py-16 px-4 bg-secondary/30">

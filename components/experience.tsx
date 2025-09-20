@@ -4,6 +4,20 @@ import { Badge } from "@/components/ui/badge"
 export function Experience() {
   const experiences = [
     {
+      title: "Software Engineer",
+      company: "OceanSound Partners",
+      period: "2025-2025",
+      summary: [
+        "Software Development in Python",
+        "Apps Dockerization",
+        "Database Administration w/Snowflake",
+        "Unit testing",
+        "Data Mantainance",
+      ],
+      notes:
+        "My tasks involved backend software engineering and data engineering. I was in charge of creating software for reporting and data mantainance (ETL workflows and data pipelines). I'm used to working with code reviews and always look forward to mantaining a clean code architecture.",
+    },
+    {
       title: "Data Engineer",
       company: "Seidor Analytics",
       period: "2022-present",
@@ -14,7 +28,7 @@ export function Experience() {
         "Technical & Functional Analysis",
       ],
       notes:
-        "My current tasks involve creating and maintaining SAP HANA Views, analyzing view execution performance and technical analysis of Data availability. My last project involved migrating the customer's database and reporting from Microsoft SSIS to Microsoft Azure Synapse.",
+        "My tasks involved creating and maintaining SAP HANA Views, analyzing view execution performance and technical analysis of Data availability. On the other hand, I was involved in migrating the customer's database and reporting from Microsoft SSIS to Microsoft Azure Synapse ready for BI utilization.",
     },
     {
       title: "Manual QA",

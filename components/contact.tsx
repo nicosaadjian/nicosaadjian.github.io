@@ -16,7 +16,7 @@ export function Contact() {
             <div className="flex justify-center space-x-4">
               <Button variant="outline" asChild>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/nicolas-saadjian/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -27,7 +27,7 @@ export function Contact() {
               </Button>
               <Button variant="outline" asChild>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/nicosaadjian"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -37,7 +37,7 @@ export function Contact() {
                 </a>
               </Button>
               <Button asChild>
-                <a href="mailto:contact@example.com" className="flex items-center gap-2">
+                <a href="mailto:nicosaadjian@gmail.com" className="flex items-center gap-2">
                   <Mail className="h-5 w-5" />
                   Email Me
                 </a>

@@ -18,8 +18,10 @@ export function Education() {
             </CardHeader>
             <CardContent>
               <p className="text-card-foreground leading-relaxed">
-                In this career I have learned functional and imperative programming using Haskell and Python. Also I
-                acquired a foundation on algorithms and algebraic and logical thinking.
+                In this career I have learned in-depth critical thinking regarding problem solving, functional analysis and work organization.
+                <br />
+                Some of the tools I've worked at university include the following: Assembly language (Risc V/x86), C, Java, Python, Haskell, GitLab, LaTeX. 
+                Thanks to this experience, my approach to programming is math-oriented.
               </p>
             </CardContent>
           </Card>
@@ -33,11 +35,6 @@ export function Education() {
                 <div className="flex items-center gap-2">
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     First Certificate in English
-                  </Badge>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Badge variant="secondary" className="bg-accent text-accent-foreground">
-                    SAP HANA
                   </Badge>
                 </div>
               </div>
